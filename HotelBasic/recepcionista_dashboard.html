@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Recepcionista</title>
+  <link rel="stylesheet" href="estilos.css"> <!-- Futuro CSS -->
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="titulo-dashboard">Panel de Recepcionista</h1>
+    <p class="bienvenida">Bienvenida, Recepcionista</p>
+  </header>
+
+  <main class="contenedor-principal">
+    <section class="menu-opciones">
+      <div class="opcion">
+        <a href="reservar_habitacion.php" class="enlace-opcion">Reservar Habitación</a>
+      </div>
+      <div class="opcion">
+        <a href="registrar_cliente.php" class="enlace-opcion">Registrar Cliente</a>
+      </div>
+      <div class="opcion">
+        <a href="registro_habitaciones.php" class="enlace-opcion">Registro de Habitaciones</a>
+      </div>
+      <div class="opcion">
+        <a href="registro_pagos.php" class="enlace-opcion">Registro de Pagos</a>
+      </div>
+      <div class="opcion">
+        <a href="reportes.php" class="enlace-opcion">Reportes</a>
+      </div>
+    </section>
+
+    <section class="cerrar-sesion">
+      <form action="logout.php" method="post">
+        <button type="submit" class="boton-salir">Cerrar Sesión</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="copyright">© HotelApp 2025 - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>

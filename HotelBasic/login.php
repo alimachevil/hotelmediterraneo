@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if ($usuario['cargo'] === 'Administrador') {
                 header("Location: admin_dashboard.php");
             } else {
-                header("Location: recepcion_dashboard.php");
+                header("Location: recepcionista_dashboard.html");
             }
             exit;
         } else {
