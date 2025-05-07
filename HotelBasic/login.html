@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Hotel</title>
+</head>
+<body>
+  <h2>Iniciar Sesión</h2>
+  <form action="login.php" method="POST">
+    <label for="dni">DNI:</label>
+    <input type="text" id="dni" name="dni" maxlength="8" required pattern="\d{8}" title="DNI de 8 dígitos"><br><br>
+
+    <label for="clave">Contraseña:</label>
+    <input type="password" id="clave" name="clave" minlength="6" required>
+    <input type="checkbox" onclick="mostrarClave()"> Mostrar<br><br>
+
+    <script>
+    function mostrarClave() {
+    const input = document.getElementById("clave");
+    input.type = (input.type === "password") ? "text" : "password";
+    }
+    </script>
+
+    <button type="submit">Ingresar</button>
+  </form>
+</body>
+</html>
